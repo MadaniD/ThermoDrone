@@ -1,28 +1,14 @@
 package com.example.thermodrone;
 
-import android.Manifest;
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.MediaController;
-import android.widget.Toast;
-import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
-import java.io.File;
-import java.io.FileOutputStream;
-
-public class MainActivity3 extends AppCompatActivity  {
+public class Pagedefin extends AppCompatActivity  {
 
     Button saveimage;
 
@@ -31,7 +17,7 @@ public class MainActivity3 extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.pagedefin);
 
         Button btn3 = findViewById(R.id.btn3);
         btn3.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +29,7 @@ public class MainActivity3 extends AppCompatActivity  {
     }
 
     public void openMainActivity4() {
-        Intent intent = new Intent(this, MainActivity4.class);
+        Intent intent = new Intent(this, Connexionserver.class);
         startActivity(intent);
     }
 //        VideoView videoView = findViewById(R.id.videoView);

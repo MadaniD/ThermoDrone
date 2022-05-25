@@ -12,16 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ThermoDrone">
         <activity
-            android:name=".MainActivity4"
+            android:name=".Connexionserver"
             android:exported="false" />
         <activity
-            android:name=".MainActivity3"
+            android:name=".Pagedefin"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".Typedecliche"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Accueil"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

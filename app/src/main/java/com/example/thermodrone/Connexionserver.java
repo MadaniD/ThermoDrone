@@ -5,7 +5,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
@@ -25,7 +24,7 @@ import android.widget.TextView;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-public class MainActivity4 extends Activity  {
+public class Connexionserver extends Activity  {
 
     TextView textResponse;
     EditText editTextAddress, editTextPort;
@@ -34,7 +33,7 @@ public class MainActivity4 extends Activity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main4);
+        setContentView(R.layout.connexionserver);
 
         editTextAddress = (EditText)findViewById(R.id.address);
         editTextPort = (EditText)findViewById(R.id.port);
@@ -66,13 +65,13 @@ public class MainActivity4 extends Activity  {
                 @Override
                 public void onClick(View arg0) {
 
-                    NotificationCompat.Builder builder = new NotificationCompat.Builder(MainActivity4.this, "My notification");
+                    NotificationCompat.Builder builder = new NotificationCompat.Builder(Connexionserver.this, "My notification");
                     builder.setContentTitle("My Title");
                     builder.setContentText("Hello from Easy tuto, this is a simple notification");
                     builder.setSmallIcon(R.drawable.ic_launcher_background);
                     builder.setAutoCancel(true);
 
-                    NotificationManagerCompat managerCompat= NotificationManagerCompat.from(MainActivity4.this);
+                    NotificationManagerCompat managerCompat= NotificationManagerCompat.from(Connexionserver.this);
                     managerCompat.notify(1,builder.build());
 
                     MyClientTask myClientTask = new MyClientTask(
